@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url("/fonts/inter-var-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.punctuation,
+.token.cdata {
+  @apply text-slate-11 dark:text-slateDark-11;
+}
+
+.token.property,
+.token.constant,
+.token.operator,
+.token.deleted {
+  @apply text-crimson-11 dark:text-crimsonDark-11;
+}
+
+.token.boolean,
+.token.symbol,
+.token.tag,
+.token.number {
+  @apply text-indigo-11 dark:text-indigoDark-11;
+}
+
+.token.selector,
+.token.attr-name,
+.token.char,
+.token.builtin,
+.token.variable,
+.token.inserted {
+  @apply text-grass-11 dark:text-grassDark-11;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.url,
+.token.entity,
+.token.class-name {
+  @apply text-blue-11 dark:text-blueDark-11;
+}
+
+.token.regex,
+.token.keyword,
+.token.string,
+.token.important {
+  @apply text-orange-11 dark:text-orangeDark-11;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
